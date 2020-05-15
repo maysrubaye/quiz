@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+	<div class="container">
+		<div id="1" class="qcard">
+			<h5 class="question-title">Did you complete all your high school education in the United States or earn a U.S GED?</h5>
+
+				<input id="y-hs-us" type="radio" name="hs-us" value="Y">
+				<label for="y-hs-us">Yes</label>
+
+				<input id="n-hs-us" type="radio" name="hs-us" value="N">
+				<label for="n-hs-us">No</label>
+		</div>
+
+		<div id="2" class="qcard" style="display: none;">
+			<h5 class="question-title">Did you graduate from a U.S high school in the last 5 years?</h5>
+
+				<input id="y-5-hs-us" type="radio" name="5-hs-us" value="Y">
+				<label for="y-5-hs-us">Yes</label>
+
+				<input id="n-5-hs-us" type="radio" name="5-hs-us" value="N">
+				<label for="n-5-hs-us">No</label>
+		</div>
+
+		<div id="3" class="qcard" style="display: none;">
+			<h5 class="question-title">Did you have an overall (cumulative) high school GPA of 3.0 of higher?</h5>
+
+				<input id="y-gpa" type="radio" name="gpa" value="Y">
+				<label for="y-gpa">Yes</label>
+
+				<input id="n-gpa" type="radio" name="gpa" value="N">
+				<label for="n-gpa">No</label>
+		</div>
+
+		<div id="4" class="qcard" style="display: none;">
+			<h5 class="question-title">If you are from one of the countries below, please select the country or N/A if you are not from one of the countries below</h5>
+
+				<input id="ab" type="radio" name="country" value="Y">
+				<label for="ab">Antigua & Barbuda</label>
+
+				<input id="au" type="radio" name="country" value="Y">
+				<label for="au">Australia</label>
+
+				<input id="bah" type="radio" name="country" value="Y">
+				<label for="bah">Bahamas</label>
+
+				<input id="bar" type="radio" name="country" value="Y">
+				<label for="bar">Barbados</label>
+
+				<input id="bel" type="radio" name="country" value="Y">
+				<label for="bel">Beliz</label>
+
+				<input id="ber" type="radio" name="country" value="Y">
+				<label for="ber">Bermuda</label>
+
+				<input id="ca" type="radio" name="country" value="Y">
+				<label for="ca">Canada</label>
+
+				<input id="ci" type="radio" name="country" value="Y">
+				<label for="ci">Cayman Island</label>
+
+				<input id="dom" type="radio" name="country" value="Y">
+				<label for="dom">Commonwealth of Dominica</label>
+
+				<input id="gre" type="radio" name="country" value="Y">
+				<label for="gre">Grenada</label>
+
+				<input id="guy" type="radio" name="country" value="Y">
+				<label for="guy">Guyana</label>
+
+				<input id="ir" type="radio" name="country" value="Y">
+				<label for="ir">Ireland</label>
+
+				<input id="jam" type="radio" name="country" value="Y">
+				<label for="jam">Jamaica</label>
+
+				<input id="mon" type="radio" name="country" value="Y">
+				<label for="mon">Montserrat</label>
+
+				<input id="nz" type="radio" name="country" value="Y">
+				<label for="nz">New Zealand</label>
+
+				<input id="kn" type="radio" name="country" value="Y">
+				<label for="kn">St. Kitts & Nevis</label>
+
+				<input id="lu" type="radio" name="country" value="Y">
+				<label for="lu">St. Lucia</label>
+
+				<input id="vg" type="radio" name="country" value="Y">
+				<label for="vg">St. Vincent & Grenadines</label>
+
+				<input id="tt" type="radio" name="country" value="Y">
+				<label for="tt">Trinidad & Tobago</label>
+
+				<input id="uk" type="radio" name="country" value="Y">
+				<label for="uk">United Kingdom</label>
+
+				<input id="vi" type="radio" name="country" value="Y">
+				<label for="vi">Virgin Islands</label>
+
+				<input id="na" type="radio" name="country" value="N">
+				<label for="na">N/A</label>
+
+		</div>
+
+
+		<div id="adv" class="rcard" style="display: none;">
+			You should talk to an academic advisor before taking any placement test.
+		</div>
+
+		<div id="egl" class="rcard" style="display: none;">
+			For an appropriate course placement, discover Your English Course with Guided Self-Placement
+			and take a Remote, Unproctored ALEKS-PPL Math Test<br>
+			Click the links below to learn more<br>
+			Learn more about the English guided self-placement<br>
+			<a target="_blank" href="http://bit.ly/pgccenglish">bit.ly/pgccenglish</a> <br>
+
+			Learn more about taking the ALEKS-PPL Math Test<br>
+			<a target="_blank" href="https://bit.ly/pgccmath">bit.ly/pgccmath</a> 
+		</div>
+
+
+		<div id="esl" class="rcard" style="display: none;">
+			You should take a Remote ESL Test <br>
+			Click the link below to learn more about how to take a Remote ESL Test <br>
+			<a target="_blank" href="http://bit.ly/pgccESL">bit.ly/pgccESL</a> 
+		</div>		
+
+
+	</div>
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+
+		var d1 = $("#1");
+    	var d2 = $("#2");
+    	var d3 = $("#3");
+    	var d4 = $("#4");
+
+    	var egl = $("#egl");
+    	var esl = $("#esl");
+    	var adv = $("#adv");
+
+    	var q1 = $("input[name='hs-us']");
+    	var q2 = $("input[name='5-hs-us']");
+    	var q3 = $("input[name='gpa']");
+    	var q4 = $("input[name='country']");
+
+    	var is_5_hs_res;
+    	var is_gpa_res;
+    	var is_country_res;
+
+
+
+	$(q1).on( "click", function(event) {
+			is_hs_res = ($("input[name='hs-us']:checked").val());
+			
+			if (is_hs_res == "Y") {//if hs yes
+				d2.show();
+				esl.hide();
+			  	egl.hide();
+				d3.hide();
+				d4.hide();
+			  	adv.hide();
+
+				$(q2).on( "click", function() {
+	  				is_5_hs_res = ($("input[name='5-hs-us']:checked").val());
+					
+					if (is_5_hs_res == "Y") { // if 5 hs yes
+						d3.show();
+			  			egl.hide();
+			  			adv.hide();
+			    		$(q3).on( "click", function() {
+			  				is_gpa_res = ($("input[name='gpa']:checked").val());
+
+			  				if (is_gpa_res == "Y") { // if gpa yes
+			  					adv.show();
+			  					egl.hide();
+			  				} else {				// if gpa no
+			  					adv.hide();
+			  					egl.show();
+			  				}
+						});
+					} else {		// if 5 hs no
+						d3.hide();
+			  			adv.hide();
+			  			egl.show();
+					}
+				});
+			} else { 		// if hs no
+				d2.hide();
+				esl.hide();
+				d3.hide();
+				d4.show();
+				egl.hide();
+
+				$(q4).on( "click", function() {
+  					is_country_res = ($("input[name='country']:checked").val());
+
+  					if (is_country_res == "Y") {
+  						egl.show();
+  						esl.hide();
+
+  					} else {
+  						esl.show();
+  						egl.hide();
+
+  					}
+				});
+			}
+
+	});//end of first hs on click event
+
+});
+</script>
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
